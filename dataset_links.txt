@@ -1,0 +1,4 @@
+BDJ Oral Lesion Dataset | https://zenodo.org/records/14571990 | verified public record | license stated by record
+Autooral | https://github.com/wurenkai/HF-UNet-and-Autooral-dataset | verified author repository | CC BY-NC-ND 4.0 article terms; inspect image terms before use
+Kaggle Oral Diseases | https://www.kaggle.com/datasets/salmansajid05/oral-diseases | verified dataset page | Kaggle account and dataset terms required
+MMOral | https://github.com/isjinghao/OralGPT | verified official repository after redirect | repository terms apply

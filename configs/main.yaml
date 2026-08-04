@@ -1,0 +1,24 @@
+model:
+  name: hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
+  image_size: 224
+  embedding_dim: 512
+  frozen: true
+scoring:
+  level_weights: [0.2, 0.5, 0.3]
+  templates_per_level: 6
+  temperature: 0.02
+  calibration_temperature: 1.35
+conformal:
+  alpha: 0.10
+  calibration_fraction: 0.80
+evaluation:
+  bootstrap_resamples: 10000
+  bootstrap_confidence: 0.95
+  primary_comparisons: 15
+  exploratory_fdr: 0.05
+runtime:
+  device: cuda
+  precision: fp32
+  batch_size: 32
+  workers: 8
+  seed: 42
